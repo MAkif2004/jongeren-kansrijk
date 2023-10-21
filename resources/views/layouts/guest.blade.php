@@ -16,6 +16,9 @@
     </head>
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+            <h1 class="mb-5 text-2xl text-white">Voer uw administratie gegevens in om toegang te krijgen</h1>
+            <p class="mb-5 text-1xl text-white">Email: bob@gmail.com</p>
+            <p class="mb-5 text-1xl text-white">Wachtwoord: 12345678</p>
             <div>
                 <a href="/">
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
