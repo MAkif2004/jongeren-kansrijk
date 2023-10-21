@@ -8,15 +8,15 @@
     <title>Jongeren Kansrijker</title>
 </head>
 <body>
-    <header>
-        Jongeren Kansrijker
-        <nav>
-            {{-- <a href="student"><p>STUDENT</p></a>
-            <a href="instituut"><p>instituut</p></a>
-            <a href="activiteit"><p>activiteit</p></a> --}}
-        </nav>
-    </header>
-    <main>
+<header>
+    <div class="title">
+        <div class="logo" id="logo">
+            <x-application-logo class="w-20 h-20 fill-current text-gray-500" style="width: 120px; height: 120px;"/>
+        </div>
+        <h3 class="title-text">Jongeren Kansrijker</h3>
+    </div>
+
+    <nav>
         <a href="medewerkers"><p class="button">Medewerkers</p></a>
         <a href="activiteiten"><p class="button">Activiteiten</p></a>
         <a href="jongeren"><p class="button">Jongeren</p></a>
@@ -27,6 +27,10 @@
                 <button class="button">Log uit</button>
             </form>
         @endauth
-    </main>
+    </nav>
+</header>
+<main>
+    <h1 class="title">Welkom bij jongeren counterstriker</h1>
+</main>
 </body>
 </html>
