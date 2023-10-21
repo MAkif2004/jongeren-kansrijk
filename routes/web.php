@@ -21,7 +21,7 @@ Route::get('/', function () {
     if (Auth::check()) {
         return view('index');
     } else {
-        return view('auth.login');
+        return redirect('/login');
     }
 });
 
