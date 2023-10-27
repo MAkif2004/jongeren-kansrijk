@@ -14,7 +14,7 @@ header {
     font-size: 38px;
 }
 
-nav {
+#nav {
     width: 100%;
     height: 76px;
     background: #171a26;
@@ -39,7 +39,7 @@ nav {
     margin-top: 50px;
 }
 
-nav .button {
+#nav .button {
     font-size: 24px;
     color: white;
     text-decoration: none;
@@ -62,4 +62,50 @@ main {
 
 main .title {
     color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .relative {
+    margin: 10px 10px;
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: white;
+}
+
+#medewerkers-title {
+    margin: 25px 0;
+    color: white;
+    text-align: center;
+}
+
+#medewerkers-list {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medewerker {
+    background: #323e6c;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 50%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 100px;
+    align-items: center;
+    font-size: 23px;
+}
+
+.medewerker-icon {
+    height: 40px;
+    width: 40px;
 }

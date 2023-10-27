@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Medewerkers;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('/', function () {
         return redirect('/login');
     }
 });
+
+Route::get('/medewerkers', [Medewerkers::class, 'index']);
 
 Route::post('/logout', function () {
 
