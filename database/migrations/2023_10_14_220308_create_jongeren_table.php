@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('birthdate');
             $table->string('gender');
             $table->foreignId('activiteit_id');
-            $table->string('instituud_id');
+            $table->string('instituut_id');
             $table->timestamps();
         });
     }

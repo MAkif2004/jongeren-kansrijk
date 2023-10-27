@@ -84,7 +84,7 @@ nav a {
     text-align: center;
 }
 
-#medewerkers-list {
+#list-section {
     width: 100%;
     min-height: 400px;
     display: flex;
@@ -108,4 +108,48 @@ nav a {
 .medewerker-icon {
     height: 40px;
     width: 40px;
+}
+
+#medewerker-edit-section {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#medewerker-edit-container {
+    background: #414d79;
+    width: 500px;
+    height: 222px;
+    border-radius: 22px;
+}
+
+input, label {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+
+.submit
+{
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin: 30px auto;
+}
+
+.jongere {
+    background: #323e6c;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 50%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 100px;
+    align-items: center;
+    font-size: 23px;
 }

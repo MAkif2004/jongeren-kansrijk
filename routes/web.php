@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\JongereController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Medewerkers;
+use App\Http\Controllers\MedewerkerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use App\Http\Controllers\Medewerkers;
 */
 
 use Illuminate\Support\Facades\Auth;
+use Jongeren\Jongeren;
 
 Route::get('/', function () {
 
@@ -26,7 +28,16 @@ Route::get('/', function () {
     }
 });
 
-Route::get('/medewerkers', [Medewerkers::class, 'index']);
+Route::get('/medewerkers', [MedewerkerController::class, 'index']);
+
+Route::get('/medewerkers/edit/{id}', [MedewerkerController::class, 'edit']);
+Route::post('/medewerkers/edit/{id}', [MedewerkerController::class, 'update']);
+
+Route::post('/medewerkers/delete/{id}', [MedewerkerController::class, 'delete']);
+
+Route::get('/jongeren', [JongereController::class, 'index']);
+
+Route::get('/jongeren/edit/{id}', [JongereController::class, 'edit']);
 
 Route::post('/logout', function () {
 
