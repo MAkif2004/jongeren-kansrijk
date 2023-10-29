@@ -20,10 +20,10 @@
                 </form>
             </div>
 
-            <a href="/medewerkers/add" class="add-button">Medewerker Toevoegen</a>
+
 
         @endforeach
-
+        <a href="/medewerkers/add" class="add-button">Medewerker Toevoegen</a>
         {{ $users->links() }}
     </section>
 </x-layout>

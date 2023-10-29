@@ -19,5 +19,7 @@ class Jongere extends Model
         return $this->belongsTo(Instituut::class);
     }
 
+    protected $guarded = [];
+
     use HasFactory;
 }

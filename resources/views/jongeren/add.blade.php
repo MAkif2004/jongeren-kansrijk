@@ -3,15 +3,15 @@
 
     <Section id="medewerker-edit-section">
         <div id="jongere-add-container">
-            <form action="/jongeren/edit/{{$jongere->id}}" method="post">
+            <form action="/jongeren/add" method="post">
                 @csrf
 
                 <label for="add-name">Naam:</label>
-                <input value="{{$jongere->name}}" name="name" type="text" id="add-name"/>
+                <input name="name" type="text" id="add-name"/>
                 <label for="add-birthdate">Geboortejaar:</label>
-                <input value="{{$jongere->birthdate}}" name="birthdate" type="date" id="add-birthate"/>
+                <input name="birthdate" type="date" id="add-birthate"/>
                 <label for="add-gender">Geslacht:</label>
-                <input value="{{$jongere->gender}}" name="gender" type="text" id="add-gender"/>
+                <input name="gender" type="text" id="add-gender"/>
                 <label for="add-activity">Kies een activiteit</label>
                 <select name="activity" id="add-activity">
                     <option value="0">Geen</option>

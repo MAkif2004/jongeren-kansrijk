@@ -34,12 +34,30 @@ Route::get('/medewerkers/edit/{id}', [MedewerkerController::class, 'edit']);
 Route::post('/medewerkers/edit/{id}', [MedewerkerController::class, 'update']);
 
 Route::get('/medewerkers/add', [MedewerkerController::class, 'add']);
+Route::post('/medewerkers/add', [MedewerkerController::class, 'store']);
 
 Route::post('/medewerkers/delete/{id}', [MedewerkerController::class, 'delete']);
 
 Route::get('/jongeren', [JongereController::class, 'index']);
 
 Route::get('/jongeren/edit/{id}', [JongereController::class, 'edit']);
+Route::post('/jongeren/edit/{id}', [JongereController::class, 'update']);
+
+Route::get('/jongeren/add', [JongereController::class, 'add']);
+Route::post('/jongeren/add', [JongereController::class, 'store']);
+
+Route::post('/jongeren/delete/{id}', [JongereController::class, 'delete']);
+
+Route::get('/activiteiten', [ActiviteitContoller::class, 'index']);
+
+Route::get('/activiteiten/edit/{id}', [ActiviteitController::class, 'edit']);
+Route::post('/activiteiten/edit/{id}', [ActiviteitController::class, 'update']);
+
+Route::get('/activiteiten/add', [ActiviteitController::class, 'add']);
+Route::post('/activiteiten/add', [ActiviteitController::class, 'store']);
+
+Route::post('/activiteiten/delete/{id}', [ActiviteitController::class, 'delete']);
+
 
 Route::post('/logout', function () {
 
