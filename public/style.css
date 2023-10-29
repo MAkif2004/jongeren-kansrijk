@@ -209,21 +209,35 @@ select {
     width: 800px;
 }
 
-#jongere-table tr {
+#jongere-table tr, #activiteit-table tr {
     height: 38px;
 }
 
-#jongere-table td {
+#jongere-table td, #activiteit-table td {
     min-width: 38px;
     text-align: center;
     color: white;
 }
-#jongere-table thead {
+#jongere-table thead, #activiteit-table thead {
     min-width: 38px;
     text-align: center;
     color: white;
     background: #3c4465;
 }
-#jongere-table thead td {
+#jongere-table thead td, #activiteit-table thead td {
     color: #b95e00;
+}
+
+#activiteit-table {
+    width: 624px;
+}
+#activiteit-table td {
+    overflow-wrap: anywhere;
+}
+
+#activiteit-add-container {
+    background: #414d79;
+    width: 500px;
+    height: 384px;
+    border-radius: 22px;
 }

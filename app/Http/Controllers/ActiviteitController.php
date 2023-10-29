@@ -28,7 +28,7 @@ class ActiviteitController extends Controller
             return redirect('login');
         }
 
-        return view('medewerkers.edit', ['medewerker' => User::find($id)]);
+        return view('activiteiten.edit', ['activiteit' => Activiteit::find($id)]);
     }
 
     public function add()
@@ -38,44 +38,44 @@ class ActiviteitController extends Controller
             return redirect('login');
         }
 
-        return view('medewerkers.add');
+        return view('activiteiten.add');
     }
 
     public function store(Request $request)
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
-            'password' => ['required'],
+            'description' => ['required', 'string']
         ]);
 
-        User::create([
+        Activiteit::create([
             'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'description' => $request->description,
+            'start_date' => $request->start_date,
+            'end_date' => $request->end_date,
         ]);
 
-        return redirect('/medewerkers');
+        return redirect('activiteiten');
     }
 
     public function update($id, Request $request)
     {
-        $medewerker = User::find($id);
+        $activiteit = Activiteit::find($id);
 
-        $medewerker->name = $request->name;
-        $medewerker->email = $request->email;
+        $activiteit->name = $request->name;
+        $activiteit->description = $request->description;
 
-        $medewerker->save();
+        $activiteit->save();
 
-        return redirect('medewerkers');
+        return redirect('activiteiten');
     }
 
     public function delete($id)
     {
-        $medewerker = User::find($id);
+        $activiteit = Activiteit::find($id);
 
-        $medewerker->delete();
+        $activiteit->delete();
 
-        return redirect('medewerkers');
+        return redirect('activiteiten');
     }
 }

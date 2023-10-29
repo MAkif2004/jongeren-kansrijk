@@ -11,6 +11,8 @@ class Activiteit extends Model
 
     protected $table = "activiteiten";
 
+    protected $guarded = [];
+
     public function jongere()
     {
         return $this->hasMany(Jongere::class);

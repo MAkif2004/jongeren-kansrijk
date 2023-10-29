@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActiviteitController;
 use App\Http\Controllers\JongereController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -48,7 +49,7 @@ Route::post('/jongeren/add', [JongereController::class, 'store']);
 
 Route::post('/jongeren/delete/{id}', [JongereController::class, 'delete']);
 
-Route::get('/activiteiten', [ActiviteitContoller::class, 'index']);
+Route::get('/activiteiten', [ActiviteitController::class, 'index']);
 
 Route::get('/activiteiten/edit/{id}', [ActiviteitController::class, 'edit']);
 Route::post('/activiteiten/edit/{id}', [ActiviteitController::class, 'update']);
