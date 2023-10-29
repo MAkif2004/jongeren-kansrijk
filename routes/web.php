@@ -33,6 +33,8 @@ Route::get('/medewerkers', [MedewerkerController::class, 'index']);
 Route::get('/medewerkers/edit/{id}', [MedewerkerController::class, 'edit']);
 Route::post('/medewerkers/edit/{id}', [MedewerkerController::class, 'update']);
 
+Route::get('/medewerkers/add', [MedewerkerController::class, 'add']);
+
 Route::post('/medewerkers/delete/{id}', [MedewerkerController::class, 'delete']);
 
 Route::get('/jongeren', [JongereController::class, 'index']);

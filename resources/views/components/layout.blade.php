@@ -17,10 +17,10 @@
     </div>
 
     <nav id="nav">
-        <a href="activiteiten"><p class="button">Activiteiten</p></a>
-        <a href="medewerkers"><p class="button">Medewerkers</p></a>
-        <a href="jongeren"><p class="button">Jongeren</p></a>
-        <a href="instituten"><p class="button">Instituten</p></a>
+        <a href="/activiteiten"><p class="button">Activiteiten</p></a>
+        <a href="/medewerkers"><p class="button">Medewerkers</p></a>
+        <a href="/jongeren"><p class="button">Jongeren</p></a>
+        <a href="/instituten"><p class="button">Instituten</p></a>
         @auth
             <form method="POST" action="/logout">
                 @csrf

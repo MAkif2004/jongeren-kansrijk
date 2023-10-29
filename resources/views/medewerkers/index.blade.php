@@ -18,9 +18,9 @@
                     @csrf
                     <p><img onclick="submit()" class="medewerker-icon" src="images/recycle_bin.png"/></p>
                 </form>
-
-
             </div>
+
+            <a href="/medewerkers/add" class="add-button">Medewerker Toevoegen</a>
 
         @endforeach
 

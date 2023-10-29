@@ -153,3 +153,20 @@ input, label {
     align-items: center;
     font-size: 23px;
 }
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    font-size: 17px;
+    background: #36adad;
+    width: 203px;
+    border-radius: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background: #47e5e5;
+}

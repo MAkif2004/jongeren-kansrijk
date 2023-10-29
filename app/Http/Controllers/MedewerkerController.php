@@ -28,6 +28,15 @@ class MedewerkerController extends Controller
         return view('medewerkers.edit', ['medewerker' => User::find($id)]);
     }
 
+    public function add() {
+
+        if (!Auth::check()) {
+            return redirect('login');
+        }
+
+        return view('medewerkers.add');
+    }
+
     public function update($id, Request $request) {
         $medewerker = User::find($id);
 
