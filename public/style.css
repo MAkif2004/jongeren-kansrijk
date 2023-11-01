@@ -209,22 +209,30 @@ select {
     width: 800px;
 }
 
-#jongere-table tr, #activiteit-table tr {
+#medewerker-table {
+    width: 509px;
+}
+
+#instituut-table {
+    width: 288px;
+}
+
+#jongere-table tr, #activiteit-table tr, #medewerker-table tr, #instituut-table tr {
     height: 38px;
 }
 
-#jongere-table td, #activiteit-table td {
+#jongere-table td, #activiteit-table td, #medewerker-table td, #instituut-table td {
     min-width: 38px;
     text-align: center;
     color: white;
 }
-#jongere-table thead, #activiteit-table thead {
+#jongere-table thead, #activiteit-table thead, #medewerker-table thead, #instituut-table thead {
     min-width: 38px;
     text-align: center;
     color: white;
     background: #3c4465;
 }
-#jongere-table thead td, #activiteit-table thead td {
+#jongere-table thead td, #activiteit-table thead td, #medewerker-table thead td, #instituut-table thead td {
     color: #b95e00;
 }
 
@@ -239,5 +247,12 @@ select {
     background: #414d79;
     width: 500px;
     height: 384px;
+    border-radius: 22px;
+}
+
+#instituut-add-container {
+    background: #414d79;
+    width: 500px;
+    height: 166px;
     border-radius: 22px;
 }

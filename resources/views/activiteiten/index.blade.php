@@ -1,6 +1,28 @@
 <x-layout>
     <h1 id="medewerkers-title">Jongeren Overzicht</h1>
 
+    <style>
+        .activiteiten {
+            border: 2px solid red;
+        }
+
+        #activiteit-table thead {
+            background: #ffbf00;
+        }
+        body {
+            background: #ffd65b;
+        }
+        #nav {
+            background: #ecb50f;
+        }
+        #nav .button {
+            background: #be9210;
+        }
+        .add-button {
+            background: #f1b400;
+        }
+    </style>
+
     <section id="list-section">
 
         <table id="activiteit-table">

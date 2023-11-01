@@ -2,27 +2,46 @@
 
     <h1 id="medewerkers-title">Medewerkers</h1>
 
+    <style>
+        .medewerkers {
+            border: 2px solid red;
+        }
+    </style>
 
     <section id="list-section">
 
-        @foreach ($users as $user)
+        <table id="medewerker-table">
+            <thead>
+            <tr>
+                <td>ID</td>
+                <td>naam</td>
+                <td>Email</td>
 
-            <div class="medewerker">
-                <p>{{$user->id}}</p>
-                <p>{{$user->name}}</p>
-                <p>{{$user->email}}</p>
-                <a href="/medewerkers/edit/{{$user->id}}">
-                    <p><img class="medewerker-icon" src="images/edit-svgrepo-com.svg"/></p>
-                </a>
-                <form action="/medewerkers/delete/{{$user->id}}" method="POST">
-                    @csrf
-                    <p><img onclick="submit()" class="medewerker-icon" src="images/recycle_bin.png"/></p>
-                </form>
-            </div>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach ($users as $user)
 
+                <tr>
+                    <td>{{$user->id}}</td>
+                    <td>{{$user->name}}</td>
+                    <td>{{$user->email}}</td>
+                    <td>
+                        <a href="/medewerkers/edit/{{$user->id}}">
+                            <p><img class="medewerker-icon" src="images/edit-svgrepo-com.svg"/></p>
+                        </a>
+                    </td>
+                    <td>
+                        <form action="/medewerkers/delete/{{$user->id}}" method="POST">
+                            @csrf
+                            <p><img onclick="submit()" class="medewerker-icon" src="images/recycle_bin.png"/></p>
+                        </form>
+                    </td>
+                </tr>
 
-
-        @endforeach
+            @endforeach
+            </tbody>
+        </table>
         <a href="/medewerkers/add" class="add-button">Medewerker Toevoegen</a>
         {{ $users->links() }}
     </section>

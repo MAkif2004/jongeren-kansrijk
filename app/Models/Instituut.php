@@ -11,6 +11,8 @@ class Instituut extends Model
 
     protected $table = 'instituten';
 
+    protected $guarded = [];
+
     public function jongere()
     {
         return $this->hasMany(Jongere::class);

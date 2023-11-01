@@ -1,6 +1,12 @@
 <x-layout>
     <h1 id="medewerkers-title">Jongere Toevoegen</h1>
 
+    <style>
+        .activiteiten {
+            border: 2px solid red;
+        }
+    </style>
+
     <Section id="medewerker-edit-section">
         <div id="jongere-add-container">
             <form action="/activiteiten/edit/{{$activiteit->id}}" method="post">

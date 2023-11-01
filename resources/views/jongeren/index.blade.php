@@ -1,6 +1,27 @@
 <x-layout>
     <h1 id="medewerkers-title">Jongeren Overzicht</h1>
 
+    <style>
+        .jongeren {
+            border: 2px solid red;
+        }
+        #jongere-table thead {
+            background: #82ff8a;
+        }
+        .add-button {
+            background: #06a511;
+        }
+        #nav {
+            background: #209428;
+        }
+        #nav .button {
+            background: #08b514;
+        }
+        body {
+            background: #2fca6b;
+        }
+    </style>
+
     <section id="list-section">
 
         <table id="jongere-table">
